@@ -286,8 +286,8 @@
 
 #carrots_1_ {
 	will-change: transform;
-	transform: translateY(-1080px);
-	animation: fall 45s infinite linear;
+	transform: translateY(-1800px);
+	animation: fall 20s infinite linear;
     cursor: pointer;
 }
 
@@ -296,5 +296,31 @@
 	100% {
 		transform: translateY(0);
 	}
+}
+
+.popup{
+  position:fixed;
+  left:50vw;
+  margin-left:35px;
+  top:50vh;
+  margin-top:-210px;
+  opacity:0;
+  transition:all 1s;
+  -webkit-transition:all 1s;
+}
 
 
+.popup div
+{
+  width:120px;
+  font-size:20px;
+}
+
+.popup div
+{
+  padding:50px;
+  background-color:black;
+  border-radius:40px;
+  color:white;
+  text-align:center;
+}

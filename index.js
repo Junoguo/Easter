@@ -12,6 +12,8 @@ var bubble = document.getElementById("bubble")
 var pinkR = document.getElementById("Bigrabbit")
 var mario =document.getElementById("mario")
 
+
+
 rabbitegg.onclick = function () {
     fact1.style.display = "inline";
     fact1.classList.add("fact1style");
@@ -66,3 +68,23 @@ egg1div.onclick = function (){
 pinkR.onmouseover = function(){
     bubble.play();  
 }
+
+$(document).ready(function(){
+  $("#carrots_1_").click(function() {
+    $(".st28").css('fill', '#FFBC5C');
+    $(".st28").css('stroke', '#FF8B00');
+    $(".st24").css('r','40') 
+      //alert("hi")
+  })
+    $("#Bigrabbit").click(function(){
+        $(".st24").css('r','50')
+        $(".st28").css('fill', '#FF8B00');
+        $(".st28").css('stroke', '#FFBC5C');
+        $(".st35").css('fill', '#FCE2FF');
+        
+    })
+    $("#clouds").click(function(){
+        $(".st35").css('fill', '#fffcb7');
+        
+    })
+})
